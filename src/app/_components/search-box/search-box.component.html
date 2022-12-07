@@ -1,0 +1,9 @@
+<section>
+  <input
+    type="text"
+    id="textField"
+    #search
+    (keydown.enter)="searchCity(search.value)"
+  />
+  <button (click)="searchCity(search.value)">Search</button>
+</section>

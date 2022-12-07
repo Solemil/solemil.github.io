@@ -1,0 +1,36 @@
+<li class="card flex" cdkDrag>
+  <div class="flex-column">
+    <p class="city">
+      {{ cityShown }}
+    </p>
+    <p>
+      <!-- TODO {{ city.country }} -->
+    </p>
+  </div>
+  <div class="flex">
+    <p class="temp">{{ temp }}°C</p>
+    <img
+      class="icon"
+      src="../assets/icons/{{ icon }}.png"
+      alt="{{ icon }} icon"
+    />
+  </div>
+  <p class="close-x" (click)="closeCard(cityShown)">x</p>
+</li>
+
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ city.name }}</mat-card-title>
+      <mat-card-subtitle>{{ city.country }}</mat-card-subtitle>
+      <img
+        mat-card-sm-image
+        src="../assets/icons/{{ city.weather }}.png"
+        alt="{{ city.weather }} icon"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ city.temp }}
+  </mat-card-content>
+</mat-card> -->
